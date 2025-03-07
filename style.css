@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #eef5ff;
     text-align: center;
+    color: #333;
 }
 
 header {
@@ -15,13 +18,18 @@ header {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.profile {
+.profile, .skills {
     margin: 40px auto;
     padding: 30px;
     width: 50%;
     background: white;
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile:hover, .skills:hover {
+    transform: translateY(-5px);
 }
 
 .profile img {
@@ -30,6 +38,27 @@ header {
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 15px;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li {
+    background: #0073e6;
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.skills li:hover {
+    background: #005bb5;
 }
 
 footer {
